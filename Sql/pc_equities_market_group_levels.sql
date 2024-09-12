@@ -1,0 +1,18 @@
+create table if not exists pc_equities_market_group_levels(
+equities_market_code Integer not null,
+equities_marketgroup_tree_id Integer null,
+equities_marketgroup_tree_effective_date varchar(255) null,
+equities_marketgroup_tree_code Integer null,
+equities_marketgroup_tree_description varchar(255) null,
+market_xva_og_structure_level1 varchar(255) null,
+market_xva_og_structure_level1_desc varchar(255) null,
+market_xva_og_structure_level2 varchar(255) null,
+market_xva_og_structure_level2_desc varchar(255) null,
+market_xva_og_structure_level3 varchar(255) null,
+market_xva_og_structure_level3_desc varchar(255) null,
+market_xva_og_structure_level4 varchar(255) null,
+market_xva_og_structure_level4_desc varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint pc_equities_market_group_levels_pk primary key(equities_market_code));
